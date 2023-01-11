@@ -8,12 +8,12 @@
 
 :root{
     /* Colors */
-    --primary: #57B6B8;
+    --primary:#5471BF;
+    --button: #57B6B8;
     --secondary: #398d8f; /*hover*/
     --font-color: #5E5E5E;
 }
 /* HEADER */
-
 .header{
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,7 @@
     font-weight: bold;
     margin: 10px;
     color: white;
-    background-color: var(--primary);
+    background-color: var(--button);
     border: none;
     padding: 6px 25px;
     border-radius: 15px;
@@ -59,7 +59,7 @@
 }
 
 .navMobile button{
-    background-color: var(--primary);
+    background-color: var(--button);
     color: #fff;
     border: none;
     width: 35px;
@@ -70,6 +70,35 @@
 
 .navMobile button:hover{
     background-color: var(--secondary);
+}
+/* /HEADER */
+/* BODY */
+/**CONTAINER 1**/
+#container_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    background-image:linear-gradient(to right,var(--primary),transparent);
+
+}
+#container_1 h1{
+    color: #fff;
+}
+#container_1 p{
+    color: #ffff;
+}
+#container_1 button{
+    width: 15em;
+    padding: 0.5em;
+    background-color: var(--button);
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 1em;
+    margin-top: 1em;
 }
 
 
