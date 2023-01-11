@@ -76,8 +76,7 @@
 /**CONTAINER 1**/
 #container_1{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 490px;
@@ -101,6 +100,64 @@
     margin-top: 1em;
 }
 
+#descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:initial;
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    margin-left: 0.7em;
+}
+
+#descricao h1, #descrição p{
+    margin-bottom: 0.7em;
+}
+/** /CONTAINER 1 **/
+#container_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+}
+
+#container_2 h1{
+    margin-top: 2em;
+    color: #424242;
+}
+
+#card_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h2{
+    margin-top: 0.9em;
+}
+.card button{
+    border: none;
+    width: 15em;
+    height: 15em;
+    padding: 3em;
+    color: #ffffff;
+    border-radius: 2em;
+    background-color: var(--primary);
+    transition: 0.5s;
+}
+.card button:hover{
+    background-color: var(--secondary);
+    transform: scale(1.1);
+}
 
 @media only screen and (min-width: 768px){
     .header{
