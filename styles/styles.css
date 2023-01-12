@@ -82,8 +82,15 @@
     width: 100%;
     height: 490px;
     background-image:linear-gradient(to right,var(--primary),transparent);
-
 }
+
+#container_1 img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
 #container_1 h1{
     color: #fff;
 }
@@ -102,6 +109,7 @@
 }
 
 #descricao{
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,7 +117,7 @@
     width: 60%;
     height: 100%;
     text-align: left;
-    margin-left: 0.7em;
+    margin-left: 4em;
 }
 
 #descricao h1, #descrição p{
@@ -144,13 +152,13 @@
     align-items: center;
 }
 .card h2{
-    margin-top: 0.9em;
+    margin-top: .2em;
 }
 .card button{
     border: none;
-    width: 15em;
-    height: 15em;
-    padding: 3em;
+    width: 12em;
+    height: 12em;
+    padding: 2em;
     color: #ffffff;
     border-radius: 2em;
     background-color: var(--primary);
@@ -199,8 +207,8 @@
 #descricao_about p{
     margin-bottom: 2em;
 }
-
-/*footer*/
+/** /CONTAINER 3 **/
+/** FOOTER **/
 #footer{
     display: flex;
     align-items: center;
@@ -215,7 +223,7 @@
     width: auto;
     height: 65px;
 }
-
+/** /FOOTER **/
 
 @media only screen and (min-width: 768px){
     .header{
@@ -227,4 +235,38 @@
     .navMobile{
         display: none;
     }
+    /** CONTAINER 2 **/
+
+    /** /CONTAINER 2 **/
+
+    .card button{
+        border: none;
+        width: 15em;
+        height: 15em;
+        padding: 3em;
+        color: #ffffff;
+        border-radius: 2em;
+        background-color: var(--primary);
+        transition: 0.5s;
+    }
+
+    /** CONTAINER 3 **/
+    .about{
+        flex-direction: row;
+    }
+
+    #img_about{
+        display: flex;
+        width: 95%;
+        height: 85%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img_about img{
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+     }
+    /** /CONTAINER 3 **/
 }
