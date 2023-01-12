@@ -23,6 +23,12 @@
     border-bottom: #c7c7c7 1px solid;
 }
 
+.header a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+
 .header img{
     width: 0 auto;
     height: 69px;
