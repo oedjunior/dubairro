@@ -421,12 +421,21 @@
     outline: none;
     border-bottom: 2px solid #1C3477;
    }
-
-   .box_info input[type=checkbox]{
-    width: 10%;
+   .chek_login{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   }
+   .chek_login a{
+    margin: 0.5em;
+   }
+   .chek_login label{
+    margin: 0 0.5em;
    }
 
-   .box_info button{
+   .chek_login button{
     width: 17em;
     border-radius: 2em;
     font-weight: bold;
@@ -437,7 +446,7 @@
     border: 1px solid var(--footer);
     transition: 0.5s;
    }
-   .box_info button:hover{
+   .chek_login button:hover{
     color: var(--footer);
     border: 1px solid var(--footer);
     background-color: var(--button);
