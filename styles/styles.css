@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
    }
+a{
+    text-decoration: none;
+}
    :root{
        /* Colors */
        --primary:#5471BF;
@@ -376,7 +379,12 @@
        /** /CONTAINER 3 **/
        /** LOGIN PAGE **/
        .box_info{
-        max-width: 35vmax;
+        max-width: 40vmax;
+        
+       }
+
+       .chek_login button{
+        margin-top: 0.3em;
        }
        /** /LOGIN PAGE **/
    }
@@ -392,6 +400,8 @@
    .box_info{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 70%;
     height: 56vh;
     background-color: #ffffff81;
@@ -403,7 +413,8 @@
    }
    .box_info label{
     display: flex;
-    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
     color: var(--footer);
     font-weight: bold;
    }
@@ -424,18 +435,20 @@
    .chek_login{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    
    }
-   .chek_login a{
+   .box_info a{
     margin: 0.5em;
    }
    .chek_login label{
     margin: 0 0.5em;
    }
 
-   .chek_login button{
+   .box_info button{
     width: 17em;
     border-radius: 2em;
     font-weight: bold;
@@ -446,7 +459,7 @@
     border: 1px solid var(--footer);
     transition: 0.5s;
    }
-   .chek_login button:hover{
+   .box_info button:hover{
     color: var(--footer);
     border: 1px solid var(--footer);
     background-color: var(--button);
