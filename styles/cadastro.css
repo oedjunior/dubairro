@@ -421,7 +421,7 @@
   border: none;
   border-bottom: 2px solid #7a7a7a;
   background-color: transparent;
-  margin: 1.2em 0em;
+  margin: 0.3em 0em;
   color:black;
  }
 
@@ -429,22 +429,18 @@
   outline: none;
   border-bottom: 2px solid #1C3477;
  }
- .chek_login{
+ .chek_cadastro{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
  }
- .chek_login a{
-  margin: 0.5em;
- }
- .chek_login label{
-  margin: 0 0.5em;
- }
+ 
 
- .chek_login button{
+ button{
   width: 17em;
+  margin: 0.6em 0;
   border-radius: 2em;
   font-weight: bold;
   padding: 0.7em;
